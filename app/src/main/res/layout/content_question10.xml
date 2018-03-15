@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="com.example.android.newhomes.Question10Activity"
+tools:showIn="@layout/activity_question10">
+
+<EditText
+    android:id="@+id/question10"
+    android:layout_width="344dp"
+    android:layout_height="119dp"
+    android:layout_marginTop="60dp"
+    android:ems="10"
+    android:inputType="textMultiLine"
+    android:text="How much equity do you have?"
+    android:textSize="18sp"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteX="8dp" />
+
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/textInputLayout"
+    android:layout_width="344dp"
+    android:layout_height="52dp"
+    android:layout_marginTop="40dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="247dp">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:hint=""
+        android:inputType="number"/>
+</android.support.design.widget.TextInputLayout>
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="167dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="180dp"
+    android:text="Next"
+    tools:layout_editor_absoluteX="185dp"
+    tools:layout_editor_absoluteY="340dp" />
+
+</LinearLayout>
+
+
+

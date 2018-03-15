@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">New Homes</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_question2">Question2Activity</string>
+    <string name="title_activity_question3">Question3Activity</string>
+    <string name="title_activity_question4">Question4Activity</string>
+    <string name="title_activity_question5">Question5Activity</string>
+    <string name="title_activity_question6">Question6Activity</string>
+    <string name="title_activity_question7">Question7Activity</string>
+    <string name="title_activity_question8">Question8Activity</string>
+    <string name="title_activity_question9">Question9Activity</string>
+    <string name="title_activity_question10">Question10Activity</string>
+    <string name="title_activity_question11">Question11Activity</string>
+    <string name="title_activity_question12">Question12Activity</string>
+    <string name="title_activity_failure">FailureActivity</string>
+    <string name="title_activity_success">SuccessActivity</string>
+</resources>

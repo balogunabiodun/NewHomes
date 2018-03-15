@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.newhomes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Question2Activity"
+            android:label="@string/title_activity_question2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question3Activity"
+            android:label="@string/title_activity_question3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question4Activity"
+            android:label="@string/title_activity_question4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question5Activity"
+            android:label="@string/title_activity_question5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question6Activity"
+            android:label="@string/title_activity_question6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question7Activity"
+            android:label="@string/title_activity_question7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question8Activity"
+            android:label="@string/title_activity_question8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question9Activity"
+            android:label="@string/title_activity_question9"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question10Activity"
+            android:label="@string/title_activity_question10"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question11Activity"
+            android:label="@string/title_activity_question11"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question12Activity"
+            android:label="@string/title_activity_question12"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FailureActivity"
+            android:label="@string/title_activity_failure"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SuccessActivity"
+            android:label="@string/title_activity_success"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
