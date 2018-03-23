@@ -13,6 +13,7 @@ import android.widget.EditText;
 public class Question8Activity extends AppCompatActivity {
 
     static int propertyValue;
+    static double minEquity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class Question8Activity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editText);
         String textImput = editText.getText().toString();
         propertyValue = Integer.parseInt(textImput);
+        minEquity = 0.3 * propertyValue;
 
         Intent intent = new Intent(this, Question9Activity.class);
         startActivity(intent);

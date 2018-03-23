@@ -14,4 +14,5 @@
     <string name="title_activity_question12">Question12Activity</string>
     <string name="title_activity_failure">FailureActivity</string>
     <string name="title_activity_success">SuccessActivity</string>
+    <string name="title_activity_question1">Question1Activity</string>
 </resources>

@@ -19,8 +19,9 @@ public class Question11Activity extends AppCompatActivity {
     int income = Question5Activity.income;
     int additionalIncome = Question7Activity.additionalIncome;
     int totalIncome = income + additionalIncome;
-    int ageDifference = 65 - userAge;
-    int loan = propertyValue - initialPayment;
+    int ageDiffSelfemployed = 60 - userAge;
+    int ageDiffEmoloyed = 55 - userAge;
+    double loan = propertyValue - initialPayment;
     double payableIncome = 0.3 * totalIncome;
     double payment;
 
@@ -55,12 +56,12 @@ public class Question11Activity extends AppCompatActivity {
         int loanPeriod = Integer.parseInt(textImput);
         int numberOfMonths = loanPeriod * 12;
 
-        if (MainActivity.employed.isChecked()) {
-            if (userAge < 21 || userAge >= 55 || loanPeriod > 20) {
+        if (Question1Activity.employed.isChecked()) {
+            if (userAge < 21 || userAge >= 55 || loanPeriod > 20 || initialPayment < Question8Activity.minEquity) {
                 Intent intent = new Intent(this, FailureActivity.class);
                 startActivity(intent);
             } else {
-                if (ageDifference >= 20 && loanPeriod == 20) {
+                if (ageDiffEmoloyed >= 20 && loanPeriod == 20) {
                     payment = (loan*((0.22*loanPeriod/numberOfMonths)*Math.pow(1+0.22*loanPeriod/numberOfMonths, numberOfMonths)))/(Math.pow(1+0.22*loanPeriod/numberOfMonths, numberOfMonths)-1);
                     if (payment > payableIncome) {
                         Intent intent = new Intent(this, FailureActivity.class);
@@ -83,12 +84,12 @@ public class Question11Activity extends AppCompatActivity {
             }
         }
 
-        if (MainActivity.selfEmployed.isChecked()) {
-            if (userAge < 21 || userAge >= 60 || loanPeriod > 20) {
+        if (Question1Activity.selfEmployed.isChecked()) {
+            if (userAge < 21 || userAge >= 60 || loanPeriod > 20 || initialPayment < Question8Activity.minEquity) {
                 Intent intent = new Intent(this, FailureActivity.class);
                 startActivity(intent);
             } else {
-                if (ageDifference >= 20 && loanPeriod == 20) {
+                if (ageDiffSelfemployed >= 20 && loanPeriod == 20) {
                     payment = (loan*((0.22*loanPeriod/numberOfMonths)*Math.pow(1+0.22*loanPeriod/numberOfMonths, numberOfMonths)))/(Math.pow(1+0.22*loanPeriod/numberOfMonths, numberOfMonths)-1);
                     if (payment > payableIncome) {
                         Intent intent = new Intent(this, FailureActivity.class);

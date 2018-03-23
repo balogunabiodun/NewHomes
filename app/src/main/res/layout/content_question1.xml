@@ -7,8 +7,8 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
     android:background="#020c16"
 app:layout_behavior="@string/appbar_scrolling_view_behavior"
-tools:context="com.example.android.newhomes.Question9Activity"
-tools:showIn="@layout/activity_question9">
+tools:context="com.example.android.newhomes.Question1Activity"
+tools:showIn="@layout/activity_question1">
 
     <ImageView
         android:layout_marginTop="20dp"
@@ -17,23 +17,34 @@ tools:showIn="@layout/activity_question9">
         android:src="@drawable/logo"/>
 
 <TextView
-    android:id="@+id/question9"
+    android:id="@+id/question1"
     android:layout_width="344dp"
     android:layout_height="50dp"
-    android:layout_marginTop="60dp"
+    android:layout_marginTop="10dp"
     android:textColor="#ffffff"
     android:textAlignment="center"
     android:ems="10"
-    android:text="How soon do you need this mortgage?"
+    android:text="Please select your employment type"
     android:textSize="18sp" />
 
-    <EditText
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:hint=""
-        android:background="#fff"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employed" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Self-Employed" />
+
+    </RadioGroup>
 
 <Button
     android:id="@+id/button"
@@ -50,10 +61,5 @@ tools:showIn="@layout/activity_question9">
         android:layout_height="100dp"
         android:src="@drawable/cityscape"/>
 
-    </LinearLayout>
-
-
-
-
-
+</LinearLayout>
 

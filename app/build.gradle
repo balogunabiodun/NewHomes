@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            storeFile file('C:/Users/707-01/Documents/android.jks')
+            storePassword 'Davids@12'
+            keyPassword 'Davids@12'
+        }
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.android.newhomes"
@@ -19,7 +27,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:design:26.0.0-beta1'

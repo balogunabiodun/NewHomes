@@ -5,21 +5,27 @@ xmlns:tools="http://schemas.android.com/tools"
 android:orientation="vertical"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:background="#020c16"
 app:layout_behavior="@string/appbar_scrolling_view_behavior"
 tools:context="com.example.android.newhomes.Question2Activity"
 tools:showIn="@layout/activity_question2">
 
-<EditText
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"/>
+
+<TextView
     android:id="@+id/question2"
     android:layout_width="344dp"
-    android:layout_height="119dp"
+    android:layout_height="50dp"
     android:layout_marginTop="60dp"
+    android:textColor="#ffffff"
+    android:textAlignment="center"
     android:ems="10"
-    android:inputType="textMultiLine"
     android:text="What year were you born?"
-    android:textSize="18sp"
-    app:layout_constraintTop_toTopOf="parent"
-    tools:layout_editor_absoluteX="8dp" />
+    android:textSize="18sp" />
 
 
     <EditText
@@ -27,6 +33,9 @@ tools:showIn="@layout/activity_question2">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:background="#fff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:inputType="number" />
 
     <Button
@@ -36,9 +45,13 @@ tools:showIn="@layout/activity_question2">
         android:layout_marginLeft="180dp"
         android:layout_marginTop="60dp"
         android:text="Next"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="340dp" />
+        android:background="#f00" />
 
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/cityscape"/>
 
 </LinearLayout>
 

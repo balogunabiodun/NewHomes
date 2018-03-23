@@ -5,43 +5,44 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#020c16"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.android.newhomes.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <EditText
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
         android:id="@+id/question1"
         android:layout_width="344dp"
-        android:layout_height="119dp"
+        android:layout_height="50dp"
         android:layout_marginTop="60dp"
+        android:paddingLeft="10dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
         android:ems="10"
-        android:inputType="textMultiLine"
-        android:text="Please select your employment type"
-        android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp" />
+        android:text="Welcome to the NewHomes mortgage test."
+        android:textSize="18sp" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Employed" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Self-Employed" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="167dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:layout_marginLeft="180dp"
-        android:text="Next"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="340dp" />
+        android:text="Begin test"
+        android:background="#f00"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/cityscape"/>
 
 
 </LinearLayout>

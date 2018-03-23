@@ -70,6 +70,10 @@
         <activity
             android:name=".SuccessActivity"
             android:label="@string/title_activity_success"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Question1Activity"
+            android:label="@string/title_activity_question1"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

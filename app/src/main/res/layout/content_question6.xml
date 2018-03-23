@@ -5,21 +5,27 @@ xmlns:tools="http://schemas.android.com/tools"
 android:orientation="vertical"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:background="#020c16"
 app:layout_behavior="@string/appbar_scrolling_view_behavior"
 tools:context="com.example.android.newhomes.Question6Activity"
 tools:showIn="@layout/activity_question6">
 
-    <EditText
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
         android:id="@+id/question6"
         android:layout_width="344dp"
-        android:layout_height="115dp"
+        android:layout_height="50dp"
         android:layout_marginTop="60dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
         android:ems="10"
-        android:inputType="textMultiLine"
         android:text="Do you have addition income?"
-        android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp" />
+        android:textSize="18sp" />
 
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -32,19 +38,23 @@ tools:showIn="@layout/activity_question6">
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:text="No"
-            tools:layout_editor_absoluteX="185dp"
-            tools:layout_editor_absoluteY="340dp" />
+            android:background="#f00"/>
 
         <Button
             android:id="@+id/button1"
             android:layout_width="167dp"
             android:layout_height="wrap_content"
             android:text="Yes"
-            tools:layout_editor_absoluteX="185dp"
-            tools:layout_editor_absoluteY="340dp" />
+            android:background="#f00"/>
 
 
     </android.support.v7.widget.LinearLayoutCompat>
+
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/cityscape"/>
 
 </LinearLayout>
 

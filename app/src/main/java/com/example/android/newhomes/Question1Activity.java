@@ -7,18 +7,18 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.RadioButton;
 
-public class MainActivity extends AppCompatActivity {
+public class Question1Activity extends AppCompatActivity {
 
+    static RadioButton employed;
+    static RadioButton selfEmployed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_question1);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -35,35 +35,17 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openQuestion1();
+                openQuestion2();
             }
         });
 
+        employed = (RadioButton) findViewById(R.id.radioButton);
+        selfEmployed = (RadioButton) findViewById(R.id.radioButton2);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-    public void openQuestion1() {
-        Intent intent = new Intent(this, Question1Activity.class);
+    public void openQuestion2() {
+        Intent intent = new Intent(this, Question2Activity.class);
         startActivity(intent);
     }
+
 }
